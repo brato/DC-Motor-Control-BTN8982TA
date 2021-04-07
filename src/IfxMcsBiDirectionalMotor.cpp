@@ -53,10 +53,8 @@ bool IfxMcsBiDirectionalMotor::begin(void)
 	mEnabled = TRUE;
 	pinMode(mOut1->pinIn, OUTPUT);
 	pinMode(mOut1->pinInh, OUTPUT);
-	pinMode(mOut1->pinIs, INPUT);
 	pinMode(mOut2->pinIn, OUTPUT);
 	pinMode(mOut2->pinInh, OUTPUT);
-	pinMode(mOut2->pinIs, INPUT);
 	setDirection(IFXMCS_DIRECTION_DEFAULT);
 	setSpeed(IFX_MCS_INITIALSPEED);
 	stop();

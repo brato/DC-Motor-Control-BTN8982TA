@@ -52,7 +52,6 @@ bool IfxMcsUniDirectionalMotor::begin(void)
 	mEnabled = TRUE;
 	pinMode(mOut->pinIn, OUTPUT);
 	pinMode(mOut->pinInh, OUTPUT);
-	pinMode(mOut->pinIs, INPUT);
 	setSpeed(IFX_MCS_INITIALSPEED);
 	stop();
 	return FALSE;
